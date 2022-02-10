@@ -30,7 +30,7 @@ The network used has the following characteristics:
 
 ### Plot of Rewards
 
-The agent is able to solve the environment after 400 episodes as the below reward plot shows:
+The agent is able to solve the environment after 430 episodes as the below reward plot shows:
 
 ![Screenshot](img/bananas_train_scores_over_episodes_v2.png)
 
