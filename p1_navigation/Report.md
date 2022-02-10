@@ -1,7 +1,14 @@
 # Project 1: Navigation
 
 ### Learning Algorithm
-For this project, a Deep Q-Network (DQN) was used. It receives the state (37-dimensional) as input and predicts the the corresponding action values for each possible game action. In order to capture temporal information, a stack of several states is given as input to the DQN. The agent acts based on an epsilon-greedy policy. The DQN learns based on the following hyperparameters:
+For this project, a Deep Q-Network (DQN) was used. 
+DQN combine Q-Learning with deep neural networks. 
+Q-Learning is an RL algorithm based on a Q-function (the state-action value function). The Q-function of a policy measures the expected return or discounted sum of rewards obtained from state s by taking action a first and following policy pi thereafter. Goal of the learning procedure is to find the optimal Q-function iteratively by updating the Q-value of the respective state-action-pair using the Bellman optimality equation. 
+As it is commonly impractical to represent the Q-function as a table, DQN uses a neural network to approximate the Q-function. During learning, the network's parameters are updated in order to minimize the temporal difference (TD) error. In other words, we use a fixed network from the previous iteration in order to calculate the TD target (target network) and then optimize the parameters of the local network in order to minimize the deviation from this target. 
+Q-learning is an off-policy algorithm that uses different policies for exploitation (greedy) and exploration (epsilon-greedy)  
+
+
+The DQN receives the state (37-dimensional) as input and predicts the the corresponding action values for each possible game action. In order to capture temporal information, a stack of several states is given as input to the DQN. The agent acts based on an epsilon-greedy policy. The DQN learns based on the following hyperparameters:
 - replay buffer size = 100000
 - minibatch size = 64
 - discount factor = 0.99
