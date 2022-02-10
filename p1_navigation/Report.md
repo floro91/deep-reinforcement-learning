@@ -30,7 +30,7 @@ The agent is able to solve the environment after 400 episodes as the below rewar
 
 ### Ideas for Future Work
 
-The implementation from this repo is a basic DQN agent that can surely be improved in the future. Four possible improvements are:
+The implementation from this repo is a basic DQN agent that can surely be improved in the future. Possible improvements are:
 - Double DQN in order to deal with overestimation of action values
 - Prioritized Experience Replay in order to increase learning effectiveness by prioritizing certain experiences from replay memory
 - Dueling DQN in order to assess the value of each state, without having to learn the effect of each action
