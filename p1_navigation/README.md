@@ -57,8 +57,6 @@ To set up your python environment to run the code in this repository, follow the
 
 6. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-![Kernel][image2]
-
 ### Getting Started
 
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
