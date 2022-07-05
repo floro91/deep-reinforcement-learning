@@ -32,7 +32,7 @@ The architectures are fully connected neural networks with following dimensions:
     - Critic: 256 -> 128 -> 64
 
 ### Results and Plot of Rewards
-By executing the instructions in `Continuous_Control.ipynb` we were able to get the agent to be able to solve the of getting an average score of at least +30 in last 100 episodes, in 1164 episodes with an average score of 30.02.
+By executing the instructions in `Continuous_Control.ipynb` we were able to get the agent to reaching an average score of at least +30 in last 100 episodes, in 1164 episodes with an average score of 30.02.
 
 Here you can find a graph of the score (avg. of last 100 episodes) over time (number of episodes):
 
