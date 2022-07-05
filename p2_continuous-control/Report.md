@@ -36,7 +36,7 @@ By executing the instructions in `Continuous_Control.ipynb` we were able to get 
 
 Here you can find a graph of the score (avg. of last 100 episodes) over time (number of episodes):
 
-![Training Scores](score_over_episodes.png)
+![Training Scores](scores.png)
 
 
 ### Ideas for future work
