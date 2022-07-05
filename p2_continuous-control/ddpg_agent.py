@@ -19,7 +19,8 @@ WEIGHT_DECAY = 0        # L2 weight decay
 UPDATE_EVERY = 20       # step frequency for target network update
 NO_UPDATES = 10         # 10 updates at a 
 EPSILON = 0.9           # epsilon for the noise process added to the actions
-EPSILON_DECAY = 1e-6    # decay for epsilon above
+EPSILON_DECAY = 0.999    # decay for epsilon above
+EPS_END = 0.1
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -77,7 +78,7 @@ class Agent():
         self.actor_local.train()
         if add_noise:
             # update epsilon
-            self.epsilon = self.epsilon * EPSILON_DECAY
+            self.epsilon = np.maximum(self.epsilon * EPSILON_DECAY, EPS_END)
             # add noise to the action
             action += self.epsilon * self.noise.sample()
         return np.clip(action, -1, 1)
