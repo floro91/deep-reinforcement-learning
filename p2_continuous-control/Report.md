@@ -34,7 +34,7 @@ The architectures are fully connected neural networks with following dimensions:
 ### Results and Plot of Rewards
 By executing the instructions in `Continuous_Control.ipynb` we were able to get the agent to be able to solve the of getting an average score of at least +30 in last 100 episodes, in 1164 episodes with an average score of 30.02.
 
-here is graph of increase of score over time (number of episodes):
+Here you can find a graph of the score (avg. of last 100 episodes) over time (number of episodes):
 
 ![Training Scores](score_over_episodes.png)
 
@@ -56,4 +56,4 @@ Another option is to modify the current algorithm by implementing Priority Exper
 
 [2][Unity Reacher Environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher)
 
-[3][A novel DDPG method with prioritized experience replay] (https://www.semanticscholar.org/paper/A-novel-DDPG-method-with-prioritized-experience-Hou-Liu/027d002d205e49989d734603ff0c2f7cbfa6b6dd) paper (Hou et al)
+[3][A novel DDPG method with prioritized experience replay](https://www.semanticscholar.org/paper/A-novel-DDPG-method-with-prioritized-experience-Hou-Liu/027d002d205e49989d734603ff0c2f7cbfa6b6dd) paper (Hou et al)
